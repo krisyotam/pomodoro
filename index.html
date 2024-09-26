@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div class="timer-settings">
+      <label for="time-input">Set Time (minutes):</label>
+      <input type="number" id="time-input" min="1" value="25">
+      <button id="start-timer-btn">Start</button>
+    </div>
+
+    <div class="ringtone-selection">
+      <label for="ringtone-select">Choose Ringtone:</label>
+      <select id="ringtone-select">
+        <option value="assets/La Campanella.mp3">la campanella</option>
+        <option value="assets/nutcracker-tchaikovsky.mp3">nutcracker-tchaikovsky</option>
+        <option value="assets/Salut damour.mp3">salut damour</option>
+      </select>
+    </div>
+
+    <div class="timer-display">
+      <span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+
+    <audio id="alarm-sound"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
